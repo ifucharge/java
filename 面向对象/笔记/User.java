@@ -20,85 +20,106 @@ public class User{
 	  private String orgi ;
 	  private String creater;
 	  private String memo;
-	private String organ;
-	private String skill ;
-	private String city ;
-	private String province ;
-	private boolean login ;
-	private boolean online ;
-	private String status ;
-	private boolean datastatus ;
-	private int fans ;
-	private int integral ;
-	public String getName() {
+	  private String organ;
+	  private String skill ;
+	  private String city ;	
+	  private String province ;
+	  private boolean login ;		
+	  private boolean online ; 	
+	  private String status ;	
+	  private boolean datastatus ;
+	  private int fans;			
+	  private int integral ;
+	  private int follows;
+	  public int getFollows(){
+		  return follows;
+	  }
+	  public void setFollows(int follows){
+		  this.follows=follows;
+	  }
+	  public String getName() {
 		return name;
 	}
-	public void setName(Stname = name;
+	public void setName(String name){
+		this.name = name;
 	}
 	public String getUsername() {
 		return username;
 	}
-	public void setUsername(Stringusername = username;
+	public void setUsername(String username){
+		this.username = username;
 	}
 	public String getPassword() {
 		return password;
 	}
-	public void setPassword(Stringpassword = password;
+	public void setPassword(String password){
+		this.password = password;
 	}
 	public String getEmail() {
 		return email;
 	}
-	public void setEmail(String eemail = email;
+	public void setEmail(String eemail){
+		eemail = email;
 	}
 	public String getUname() {
 		return uname;
 	}
-	public void setUname(String uuname = uname;
+	public void setUname(String uuname){
+			uuname = uname;
 	}
 	public String getFirstname() {
 		return firstname;
 	}
-	public void setFirstname(String firstfirstname = firstname;
+	public void setFirstname(String firstfirstname){
+		firstfirstname = firstname;
 	}
 	public String getMidname() {
 		return midname;
 	}
-	public void setMidname(String midmidname = midname;
+	public void setMidname(	String midmidname){
+		 midmidname = midname;
 	}
 	public String getLastname() {
 		return lastname;
 	}
-	public void setLastname(String lastname)lastname = lastname;
+	public void setLastname(String lastname){
+		lastname = lastname;
 	}
 	public String getLanguage() {
 		return language;
 	}
-	public void setLanguage(String language)language = language;
+	public void setLanguage(String language){
+		language = language;
 	}
 	public String getJobtitle() {
 		return jobtitle;
 	}
-	public void setJobtitle(String jobtitle)jobtitle = jobtitle;
+	public void setJobtitle(String jobtitle){
+		jobtitle = jobtitle;
 	}
 	public String getDepartment() {
 		return department;
 	}
-	public void setDepartment(String department)department = department;
+	public void setDepartment(String department){
+		department = department;
 	}
 	public String getGender() {
 		return gender;
 	}
-	public void setGender(String gender)gender = gender;
+	public void setGender(String gender){
+	gender = gender;
 	}
 	public String getMobile() {
 		return mobile;
 	}
-	public void setMobile(String mobile)mobile = mobile;
+	public void setMobile(String mobile)
+	{mobile = mobile;
 	}
 	public String getBirthday() {
 		return birthday;
 	}
-	public void setBirthday(String birthday)birthday = birthday;
+	public void setBirthday(String birthday){
+	birthday = birthday;
 	}
 	public String getNickname() {
 		return nickname;
@@ -128,7 +149,7 @@ public class User{
 		return memo;
 	}
 	public void setMemo(String memo) {
-	.memo = memo;
+	memo = memo;
 	}
 	public String getOrgan() {
 		return organ;
@@ -190,5 +211,5 @@ public class User{
 	public void setIntegral(int integral) {
 		integral = integral;
 	}
-
+	
 	}
