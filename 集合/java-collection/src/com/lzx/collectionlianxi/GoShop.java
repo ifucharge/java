@@ -12,10 +12,12 @@ import java.util.*;
 
 
 public class GoShop {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		Go gg=new Go();
 		gg.init();
 		System.out.println(gg.us.getCo());
+		gg.save(gg);
+		gg.load();
 	}
 
 	
@@ -137,6 +139,10 @@ class User1 implements Serializable{
 	}
 	public void setSs(int ss) {
 		this.ss = ss;
+	}
+	@Override
+	public String toString() {
+		return "ShangPing [no=" + no + ", type=" + type + ", price=" + price + ", ss=" + ss + "]";
 	}
 	
 

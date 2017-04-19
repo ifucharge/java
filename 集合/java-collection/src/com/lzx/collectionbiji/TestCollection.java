@@ -7,6 +7,7 @@ import java.util.Iterator;
  * */
 public class TestCollection {
 	public static void main(String[] args) {
+		//AbstractCollection
 		Collection coll=new ArrayList();
 		Collection coll1=new ArrayList();
 //1.添加功能		
