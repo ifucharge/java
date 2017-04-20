@@ -1,6 +1,7 @@
 package com.lzx.collectionbiji;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Collections;
 import java.util.Iterator;
 //import java.util.*;
 /*Collection接口的功能；
@@ -19,6 +20,7 @@ public class TestCollection {
 		System.out.println(coll1);
 		coll1.add("123");
 		coll.add("567");
+	
 		
 //2.删除功能
 		//coll.clear();

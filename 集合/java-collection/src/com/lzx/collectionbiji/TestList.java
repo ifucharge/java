@@ -18,6 +18,7 @@ trimToSize() 将此 ArrayList 实例的容量调整为列表的当前大小。
  * */
 import java.util.*;
 public class TestList {
+	@SuppressWarnings("unchecked")
 	public static void main(String[] args) {
 		List li1=new ArrayList();
 		LinkedList<String> li2=new LinkedList<>();
@@ -26,6 +27,10 @@ public class TestList {
 		li1.add("213");
 		li1.add("333");
 		li1.add(0,"000");//算是插入了；
+		System.out.println(li1);
+		Collections.sort(li1);//对于List集合自然排序；
+		System.out.println(li1);
+		System.out.println("-=--------------------------");
 		System.out.println(li1.indexOf("333"));//返回第一次出现该对象的索引；
 		System.out.println(li1.get(0));//得到指定索引的元素；
 		System.out.println(li1.set(1, "222"));//指定位置替换指定元素；
