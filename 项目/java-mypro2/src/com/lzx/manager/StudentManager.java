@@ -29,8 +29,8 @@ public class StudentManager {
 		ss.checkStu1(3);
 		System.out.println("------------------------------");
 		ss.sortStu();
-		ss.findStu();
-		System.out.println("------------------------------");
+		//ss.findStu();
+		System.out.println("\n------------------------------");
 		
 		
 	}//测试一下；
@@ -125,11 +125,10 @@ public class StudentManager {
 			}
 			
 		});
-		Set<Map.Entry<Integer,Student>> ss=mm.entrySet();
-		for(Map.Entry<Integer,Student> m:ss){
-			System.out.print(m.getKey());
-			System.out.println("	 "+m.getValue());
-		}
+	    for(Map.Entry<Integer,Student> mp:ts){
+	    	System.out.print("\n"+mp.getKey());
+	    	System.out.print("    "+mp.getValue());
+	    }
 		
 	}
 	
