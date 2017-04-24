@@ -3,6 +3,10 @@ package lianxi;
 import java.util.Scanner;
 public class Demo1{
   public static void main(String[] args){
+    //int[][] f=new int[1][1];
+  //int []f[]=new int[3][];
+  //float []f[]=new float[6][6];//Ã»Ã«²¡;
+  //int[] a=new int[3];
     double[] money=new double[5];
     Demo1 doe=new Demo1();
     Scanner in=new Scanner(System.in);
