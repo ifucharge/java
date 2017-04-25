@@ -1,0 +1,44 @@
+
+import java.util.Scanner;
+/*输入类型不匹配类型异常处理
+ * 注意：
+ * */
+public class LoopBack {
+	public static void main(String[] args) {
+		LoopBack loo = new LoopBack();
+		loo.show();
+	}
+	public void show() {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("请输入一个数字：");		
+		int input = 0;
+		int input1 = 0;
+		try {
+			//运行到这里输入个"a";
+			input = scanner.nextInt();
+			//感觉这个Sanncer的next方法就是读取从控制台输入的字符，再把这个字符赋值给变量；
+			/*但这个时候输入一个非int类型的字符时，报InputMismatchException异常，这是控制台输入
+			 * 的字符就没有给到input，暂时留在了控制台；当后面再有调用Scanner的next方法时，就会把
+			 * 这个留在控制台的字符读取到，导致感觉下一个Scanner语句没有从控制台输入的过程；
+			 * */
+			input1 = input;
+		} catch (Exception e) {
+			e.printStackTrace();
+			System.out.println("输入的不是数字!!!");			
+		}		
+		if (input == 0) {			
+			System.out.println("是否继续<y/n>:");
+			System.out.println(scanner.next()+"test");
+			//"a"，就被这个Scanner语句读取到了，就没有手动从控制台输入的过程了；
+			System.out.println(scanner.next()+"test1");
+			String str = scanner.next();
+			if ("y".equalsIgnoreCase(str)) {
+				show();
+				return;
+			}
+			System.out.println("test5");
+		}
+		System.out.println("test6");
+	}
+}
+
